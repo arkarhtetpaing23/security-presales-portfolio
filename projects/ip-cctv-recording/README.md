@@ -42,4 +42,4 @@ The before and after stages repeat the same 13-check matrix. They are not 26 dif
 
 No physical IP camera, NVR appliance, PoE switch, cable, ONVIF discovery, DHCP server, managed-switch VLAN, night image, physical storage retention, access-control system, public-address system or AutoCAD drawing was tested. The human test covered saved exports; browser live-view playback and unfamiliar-fault troubleshooting have not been personally assessed. This is not proof of independent production deployment capability.
 
-The AI-assisted source was reviewed before my run. I personally executed the guided procedure and validated the described outputs. See the exact contribution statement before interpreting any result as independently authored work.
+The source I was prepared and reviewed with AI-assist before my run. I personally executed the guided procedure and validated the described outputs. See the exact contribution statement before interpreting any result as independently authored work.
