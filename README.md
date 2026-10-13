@@ -20,7 +20,7 @@ The career goal is to support technical demonstrations, requirements clarificati
 
 ## Contribution and evidence
 
-The project materials were developed with both Arkar Htet Paing and AI assistance. I personally ran the reviewed commissioning procedure, supplied its actual output, played both saved exports and explained live versus recorded video and camera-source failure isolation. The saved reports and export hashes were subsequently checked. I do not claim unaided authorship or independent commercial commissioning experience.
+The project materials were developed with AI assistance. I personally ran the reviewed commissioning procedure, supplied its actual output, played both saved exports and explained live versus recorded video and camera-source failure isolation. The saved reports and export hashes were subsequently checked. I do not claim unaided authorship or independent commercial commissioning experience.
 
 Only personally validated work is presented. Other prepared project materials are excluded until their personal implementation, testing and understanding are established.
 
