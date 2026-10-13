@@ -2,7 +2,7 @@
 
 Computing and cyber security graduate preparing for an entry-level opportunity in network services and integrated security. This portfolio demonstrates a personally executed, guided IP CCTV software lab and the evidence behind its results.
 
-Prepared with the requirements of Singapore Sales Engineer (Pre-Sales), agency reference **TA-1054-Rachel**, in mind. It is a learning portfolio, not a record of customer installations or commercial pre-sales employment.
+Prepared with the requirements of Sales Engineer (Pre-Sales), in mind. It is a learning portfolio, not a record of customer installations or commercial pre-sales employment.
 
 ## Start here
 
