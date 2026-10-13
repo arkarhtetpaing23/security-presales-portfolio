@@ -1,0 +1,57 @@
+UTC: 2026-10-13T18:14:18.099075+00:00
+COMMAND: <LAB_ROOT>/tools/ffmpeg -hide_banner -loglevel info -nostdin -rtsp_transport tcp -i rtsp://viewer:<redacted>@127.30.0.10:8554/cam01 -frames:v 30 -an -progress pipe:1 -f null -
+EXIT: 0
+frame=21
+fps=0.00
+stream_0_0_q=-0.0
+bitrate=N/A
+total_size=N/A
+out_time_us=2600000
+out_time_ms=2600000
+out_time=00:00:02.600000
+dup_frames=0
+drop_frames=0
+speed= 5.2x
+progress=continue
+frame=26
+fps=26.00
+stream_0_0_q=-0.0
+bitrate=N/A
+total_size=N/A
+out_time_us=3100000
+out_time_ms=3100000
+out_time=00:00:03.100000
+dup_frames=0
+drop_frames=0
+speed= 3.1x
+progress=continue
+frame=30
+fps=20.11
+stream_0_0_q=-0.0
+bitrate=N/A
+total_size=N/A
+out_time_us=3500000
+out_time_ms=3500000
+out_time=00:00:03.500000
+dup_frames=0
+drop_frames=0
+speed=2.35x
+progress=end
+Input #0, rtsp, from 'rtsp://viewer:<redacted>@127.30.0.10:8554/cam01':
+  Metadata:
+    title           : No Name
+  Duration: N/A, start: 0.100000, bitrate: N/A
+  Stream #0:0: Video: h264 (Constrained Baseline), yuv420p(progressive), 640x360 [SAR 1:1 DAR 16:9], 10 fps, 10 tbr, 90k tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    title           : No Name
+    encoder         : Lavf61.1.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 10 fps, 10 tbn
+      Metadata:
+        encoder         : Lavc61.3.100 wrapped_avframe
+frame=   21 fps=0.0 q=-0.0 size=N/A time=00:00:02.60 bitrate=N/A speed= 5.2x    
+frame=   26 fps= 26 q=-0.0 size=N/A time=00:00:03.10 bitrate=N/A speed= 3.1x    
+[out#0/null @ 0x3c1c5000] video:13KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=   30 fps= 20 q=-0.0 Lsize=N/A time=00:00:03.50 bitrate=N/A speed=2.35x    

@@ -1,0 +1,125 @@
+{
+  "utc": "2026-10-13T18:14:31.933810+00:00",
+  "lab": "01",
+  "mode": "actual software execution with synthetic sources",
+  "checks": [
+    {
+      "name": "two NVR sources ready",
+      "pass": true,
+      "detail": {
+        "cam01": true,
+        "cam02": true
+      }
+    },
+    {
+      "name": "cam01 live decode",
+      "pass": true,
+      "detail": {
+        "exit": 0,
+        "decoded_frames": 30,
+        "log": "logs/20261013T181418099036Z-decode-cam01.log"
+      }
+    },
+    {
+      "name": "cam02 live decode",
+      "pass": true,
+      "detail": {
+        "exit": 0,
+        "decoded_frames": 30,
+        "log": "logs/20261013T181424284538Z-decode-cam02.log"
+      }
+    },
+    {
+      "name": "wrong password rejected",
+      "pass": true,
+      "detail": {
+        "exit": 8,
+        "observed": "401",
+        "log": "logs/20261013T181425521012Z-bad-password.log"
+      }
+    },
+    {
+      "name": "unknown channel rejected",
+      "pass": true,
+      "detail": {
+        "exit": 8,
+        "log": "logs/20261013T181425526830Z-wrong-path.log"
+      }
+    },
+    {
+      "name": "viewer cannot publish",
+      "pass": true,
+      "detail": {
+        "exit": 8,
+        "log": "logs/20261013T181426032964Z-viewer-publish-denied.log"
+      }
+    },
+    {
+      "name": "viewer cannot access control API",
+      "pass": true,
+      "detail": "expected HTTP 401/403"
+    },
+    {
+      "name": "authenticated HLS live playlist",
+      "pass": true,
+      "detail": "EXTM3U playlist retrieved"
+    },
+    {
+      "name": "cam01 recorded timespan",
+      "pass": true,
+      "detail": [
+        {
+          "start": "2026-10-13T18:13:29.727032Z",
+          "duration": 22.09958,
+          "url": "http://127.30.0.10:9996/get?duration=22.09958&path=cam01&start=2026-10-13T18%3A13%3A29.727032Z"
+        }
+      ]
+    },
+    {
+      "name": "cam01 exported playback decode",
+      "pass": true,
+      "detail": {
+        "exit": 0,
+        "decoded_frames": 50,
+        "bytes": 394639,
+        "sha256": "9c03a1ad77823546b6c30063d2d4f29e37420787fedc37591795962dd016bf72",
+        "log": "logs/20261013T181431826905Z-playback-decode-cam01.log"
+      }
+    },
+    {
+      "name": "cam02 recorded timespan",
+      "pass": true,
+      "detail": [
+        {
+          "start": "2026-10-13T18:13:29.976232Z",
+          "duration": 38.09984,
+          "url": "http://127.30.0.10:9996/get?duration=38.09984&path=cam02&start=2026-10-13T18%3A13%3A29.976232Z"
+        }
+      ]
+    },
+    {
+      "name": "cam02 exported playback decode",
+      "pass": true,
+      "detail": {
+        "exit": 0,
+        "decoded_frames": 50,
+        "bytes": 373942,
+        "sha256": "c96f9e0330db39af63ac73749dc3e63f43c4d5bc77159cebcfdd8b7c3a67c9fd",
+        "log": "logs/20261013T181431898657Z-playback-decode-cam02.log"
+      }
+    },
+    {
+      "name": "service bindings are loopback",
+      "pass": true,
+      "detail": [
+        "127.20.0.11:8554",
+        "127.20.0.12:8554",
+        "127.30.0.10:8554",
+        "127.30.0.10:8888",
+        "127.30.0.10:9996",
+        "127.30.0.10:9997"
+      ]
+    }
+  ],
+  "passed": true
+}

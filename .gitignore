@@ -1,0 +1,17 @@
+# Generated lab state stays local; publication uses an explicit file manifest.
+**/config/
+**/private/
+**/runtime/
+**/recordings/
+**/exports/
+**/__pycache__/
+*.pyc
+*.key
+*.pem
+.env
+.env.*
+**/tools/*
+!**/tools/reference-manifest.json
+
+# Included reference evidence/logs are deliberately tracked. New runs must use
+# a separate workspace; do not stage their logs or results into this release.

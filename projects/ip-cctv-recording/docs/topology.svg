@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+<defs>
+ <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#17806d"/></marker>
+ <style>text{font-family:DejaVu Sans,Arial,sans-serif;fill:#17324d}.title{font-size:29px;font-weight:bold}.heading{font-size:20px;font-weight:bold}.body{font-size:16px}.small{font-size:14px}.mono{font-family:DejaVu Sans Mono,monospace;font-size:15px}.flow{stroke:#17806d;stroke-width:3;fill:none;marker-end:url(#arrow)}</style>
+</defs>
+<rect width="1400" height="850" fill="#f5f8fc"/>
+<text x="48" y="58" class="title">LAB 1 · IP CCTV commissioning and recording</text>
+<text x="48" y="90" class="body">Arkar Htet Paing · working software simulation · synthetic video only</text>
+<rect x="32" y="122" width="1336" height="525" rx="18" fill="white" stroke="#8a9bae" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="52" y="151" class="small">ONE LINUX HOST · actual traffic stays on loopback · no physical switch, PoE or VLAN</text>
+<rect x="65" y="186" width="340" height="160" rx="12" fill="#edf4fd" stroke="#6193c2"/>
+<text x="85" y="218" class="heading">CAM01 · synthetic source</text>
+<text x="85" y="250" class="body">FFmpeg: moving H.264 test pattern</text>
+<text x="85" y="278" class="body">MediaMTX camera RTSP endpoint</text>
+<text x="85" y="310" class="mono">127.20.0.11:8554/main</text>
+<rect x="65" y="406" width="340" height="160" rx="12" fill="#edf4fd" stroke="#6193c2"/>
+<text x="85" y="438" class="heading">CAM02 · synthetic source</text>
+<text x="85" y="470" class="body">FFmpeg: flipped, recoloured pattern</text>
+<text x="85" y="498" class="body">MediaMTX camera RTSP endpoint</text>
+<text x="85" y="530" class="mono">127.20.0.12:8554/main</text>
+<rect x="545" y="259" width="335" height="237" rx="12" fill="#e7f5ef" stroke="#17806d" stroke-width="2"/>
+<text x="567" y="295" class="heading">NVR01 · software recorder</text>
+<text x="567" y="327" class="body">MediaMTX v1.21.2</text>
+<text x="567" y="355" class="body">Pull both sources continuously</text>
+<text x="567" y="384" class="body">Record + live view + playback</text>
+<text x="567" y="415" class="mono">127.30.0.10</text>
+<text x="567" y="445" class="body">RTSP 8554 · HLS 8888</text>
+<text x="567" y="474" class="body">Playback 9996 · control API 9997</text>
+<path d="M405 267 L470 267 L470 324 L540 324" class="flow"/>
+<path d="M405 487 L470 487 L470 423 L540 423" class="flow"/>
+<text x="428" y="235" class="small">RTSP / TCP</text>
+<text x="428" y="559" class="small">Read-only recorder account</text>
+<rect x="1000" y="184" width="320" height="133" rx="12" fill="#fff7e9" stroke="#c79b43"/>
+<text x="1020" y="217" class="heading">Host filesystem</text>
+<text x="1020" y="248" class="mono">recordings/cam01/ · cam02/</text>
+<text x="1020" y="279" class="body">fMP4 parts → ~20 s segments</text>
+<path d="M880 323 L940 323 L940 251 L995 251" class="flow"/>
+<rect x="1000" y="359" width="320" height="185" rx="12" fill="#f1edfa" stroke="#9481b4"/>
+<text x="1020" y="392" class="heading">Local viewer and evidence</text>
+<text x="1020" y="425" class="body">FFmpeg live / export decoding</text>
+<text x="1020" y="455" class="body">HLS endpoint · viewer account</text>
+<text x="1020" y="485" class="body">Operator API · readiness checks</text>
+<text x="1020" y="515" class="body">MP4 exports · logs · SHA256</text>
+<path d="M880 427 L995 427" class="flow"/>
+<text x="63" y="609" class="body">Both sources: 640×360 · 10 fps · 512 kbps target each · GOP 20 · no audio · UTC host clock</text>
+<rect x="32" y="680" width="1336" height="132" rx="14" fill="#eaf0f7"/>
+<text x="53" y="711" class="heading">Validated scope · guided software execution</text>
+<text x="53" y="746" class="mono">Two synthetic sources; before/after acceptance 13/13; recovery 3/3; saved exports personally viewed.</text>
+<text x="53" y="780" class="body">No physical CCTV, PoE, VLAN, AutoCAD or commercial installation is demonstrated.</text>
+</svg>

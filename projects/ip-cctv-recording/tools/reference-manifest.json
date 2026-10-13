@@ -1,0 +1,18 @@
+{
+  "mediamtx": {
+    "version": "v1.21.2",
+    "url": "https://github.com/bluenviron/mediamtx/releases/download/v1.21.2/mediamtx_v1.21.2_linux_amd64.tar.gz",
+    "archive_sha256": "121be6e00397e473a95d83c75f4fcd3819a6af3b0e1a50889cba43ab4fab6a27",
+    "github_asset_digest": "sha256:121be6e00397e473a95d83c75f4fcd3819a6af3b0e1a50889cba43ab4fab6a27"
+  },
+  "ffmpeg_distribution": {
+    "package": "imageio-ffmpeg",
+    "version": "0.6.0",
+    "url": "https://files.pythonhosted.org/packages/a0/2d/43c8522a2038e9d0e7dbdf3a61195ecc31ca576fb1527a528c877e87d973/imageio_ffmpeg-0.6.0-py3-none-manylinux2014_x86_64.whl",
+    "wheel_sha256": "c7e46fcec401dd990405049d2e2f475e2b397779df2519b544b8aab515195282"
+  },
+  "binary_sha256": {
+    "mediamtx": "0ffb7f18210d08ee38cb16668c4f3a2c96622e69d401119c0026d078a2b89523",
+    "ffmpeg": "e7e7fb30477f717e6f55f9180a70386c62677ef8a4d4d1a5d948f4098aa3eb99"
+  }
+}

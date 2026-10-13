@@ -1,0 +1,20 @@
+UTC: 2026-10-13T18:14:26.033009+00:00
+COMMAND: <LAB_ROOT>/tools/ffmpeg -hide_banner -loglevel info -nostdin -f lavfi -i testsrc2=size=160x90:rate=2 -frames:v 2 -c:v libx264 -threads 1 -f rtsp -rtsp_transport tcp rtsp://viewer:<redacted>@127.30.0.10:8554/cam01
+EXIT: 8
+Input #0, lavfi, from 'testsrc2=size=160x90:rate=2':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 160x90 [SAR 1:1 DAR 16:9], 2 fps, 2 tbr, 2 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> h264 (libx264))
+[libx264 @ 0x2e3f2540] using SAR=1/1
+[libx264 @ 0x2e3f2540] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x2e3f2540] profile High, level 1.0, 4:2:0, 8-bit
+[libx264 @ 0x2e3f2540] 264 - core 164 r3191 4613ac3 - H.264/MPEG-4 AVC codec - Copyleft 2003-2024 - http://www.videolan.org/x264.html - options: cabac=1 ref=3 deblock=1:0:0 analyse=0x3:0x113 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=1 lookahead_threads=1 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=2 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 aq=1:1.00
+[rtsp @ 0x2e3ef640] method ANNOUNCE failed: 401 Unauthorized
+[out#0/rtsp @ 0x2e3ef440] Could not write header (incorrect codec parameters ?): Server returned 401 Unauthorized (authorization failed)
+[vf#0:0 @ 0x2e3f6ac0] Error sending frames to consumers: Server returned 401 Unauthorized (authorization failed)
+[vf#0:0 @ 0x2e3f6ac0] Task finished with error code: -825242872 (Server returned 401 Unauthorized (authorization failed))
+[vf#0:0 @ 0x2e3f6ac0] Terminating thread with return code -825242872 (Server returned 401 Unauthorized (authorization failed))
+[out#0/rtsp @ 0x2e3ef440] Nothing was written into output file, because at least one of its streams received no packets.
+frame=    0 fps=0.0 q=0.0 Lsize=       0KiB time=N/A bitrate=N/A speed=N/A    
+Conversion failed!

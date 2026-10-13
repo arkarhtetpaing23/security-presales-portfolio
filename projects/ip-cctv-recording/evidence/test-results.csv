@@ -1,0 +1,30 @@
+stage,check,passed
+before-recovery,two NVR sources ready,True
+before-recovery,cam01 live decode,True
+before-recovery,cam02 live decode,True
+before-recovery,wrong password rejected,True
+before-recovery,unknown channel rejected,True
+before-recovery,viewer cannot publish,True
+before-recovery,viewer cannot access control API,True
+before-recovery,authenticated HLS live playlist,True
+before-recovery,cam01 recorded timespan,True
+before-recovery,cam01 exported playback decode,True
+before-recovery,cam02 recorded timespan,True
+before-recovery,cam02 exported playback decode,True
+before-recovery,service bindings are loopback,True
+recovery,camera outage isolated,True
+recovery,camera recovery automatic at recorder,True
+recovery,NVR restart preserves old files and resumes decodable recordings,True
+after-recovery,two NVR sources ready,True
+after-recovery,cam01 live decode,True
+after-recovery,cam02 live decode,True
+after-recovery,wrong password rejected,True
+after-recovery,unknown channel rejected,True
+after-recovery,viewer cannot publish,True
+after-recovery,viewer cannot access control API,True
+after-recovery,authenticated HLS live playlist,True
+after-recovery,cam01 recorded timespan,True
+after-recovery,cam01 exported playback decode,True
+after-recovery,cam02 recorded timespan,True
+after-recovery,cam02 exported playback decode,True
+after-recovery,service bindings are loopback,True

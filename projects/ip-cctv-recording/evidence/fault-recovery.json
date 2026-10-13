@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-13T18:14:13.176541+00:00",
+  "lab": "01",
+  "mode": "actual software execution with synthetic sources",
+  "checks": [
+    {
+      "name": "camera outage isolated",
+      "pass": true,
+      "detail": {
+        "fault_started_utc": "2026-10-13T18:13:45.906504+00:00",
+        "observed_utc": "2026-10-13T18:13:58.283558+00:00",
+        "ready": {
+          "cam01": false,
+          "cam02": true
+        },
+        "cam02_decode_log": "logs/20261013T181358283133Z-cam02-during-cam01-outage.log"
+      }
+    },
+    {
+      "name": "camera recovery automatic at recorder",
+      "pass": true,
+      "detail": {
+        "recovered_utc": "2026-10-13T18:14:08.097047+00:00",
+        "decode_log": "logs/20261013T181408096589Z-cam01-after-recovery.log"
+      }
+    },
+    {
+      "name": "NVR restart preserves old files and resumes decodable recordings",
+      "pass": true,
+      "detail": {
+        "restart_started_utc": "2026-10-13T18:14:08.097778+00:00",
+        "observed_utc": "2026-10-13T18:14:13.176534+00:00",
+        "old_files_preserved": true,
+        "settled_old_file_hashes_unchanged": true,
+        "settled_old_file_count": 5,
+        "new_recordings": {
+          "cam01": {
+            "exit": 0,
+            "frames": 30,
+            "log": "logs/20261013T181413150227Z-new-recording-after-restart-cam01.log",
+            "file": "recordings/cam01/2026-10-13_18-14-09-789878.mp4"
+          },
+          "cam02": {
+            "exit": 0,
+            "frames": 30,
+            "log": "logs/20261013T181413176182Z-new-recording-after-restart-cam02.log",
+            "file": "recordings/cam02/2026-10-13_18-14-09-976229.mp4"
+          }
+        }
+      }
+    }
+  ],
+  "passed": true
+}

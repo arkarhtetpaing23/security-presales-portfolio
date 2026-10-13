@@ -1,0 +1,6 @@
+UTC: 2026-10-13T18:14:25.526858+00:00
+COMMAND: <LAB_ROOT>/tools/ffmpeg -hide_banner -loglevel info -nostdin -rtsp_transport tcp -i rtsp://viewer:<redacted>@127.30.0.10:8554/nonexistent -frames:v 30 -an -progress pipe:1 -f null -
+EXIT: 8
+[in#0 @ 0x334e7480] Error opening input: Server returned 400 Bad Request
+Error opening input file rtsp://viewer:<redacted>@127.30.0.10:8554/nonexistent.
+Error opening input files: Server returned 400 Bad Request
