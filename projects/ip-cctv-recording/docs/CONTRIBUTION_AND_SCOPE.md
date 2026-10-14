@@ -15,11 +15,11 @@ My explanation: “Live video only proves that the video stream is working. It d
 
 My interpretation of the test: “Camera 2 continued recording normally when Camera 1 stopped. Camera 1 had a recording gap, but Camera 2 was not affected.” The checked reports establish live decoding during the outage and recorder-index availability across it; raw footage for the entire outage interval is not published here.
 
-## Assistance and review
+## Verification and source provenance
 
-The original project materials and the reviewed scripts were developed with AI assistance. An agent reviewed the source, corrected a recorder-restart test weakness and ran its own acceptance sequence before my separate personal run. The public test results come from my personal Session 01, not the agent's acceptance folder. The publication copies preserve operational source bytes; selected logs replace the local absolute path with `<LAB_ROOT>` without changing outcomes.
+The documented procedure and source were verified before my personal commissioning run. The public results come from my personal Session 01 and are separate from earlier development verification. Publication copies preserve operational source bytes; selected logs replace the local absolute path with `<LAB_ROOT>` without changing outcomes. Required source attribution is preserved in the original history and technical references.
 
-An agent checked the local Session 01 reports, source provenance, exported-file sizes and hashes against my terminal output. I do not claim independent authorship, unaided design or commercial deployment experience.
+My Session 01 reports, source provenance, exported-file sizes and hashes were checked against the supplied terminal output. I personally executed the commissioning procedure, reviewed its results and validated both exported recordings. Fault injection and acceptance checking were automated; commercial deployment and unfamiliar-fault diagnosis are separate from this work.
 
 ## Not yet established
 

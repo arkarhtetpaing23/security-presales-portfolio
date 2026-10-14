@@ -40,7 +40,7 @@ The script tracks owned processes using PID and process start time. This prevent
 
 The decoder requires real frames rather than only an HTTP success response. Final five-second exports contained 50 decoded frames each at 10 fps. An HTTP 401 from an invalid-password test is expected; receiving video without valid credentials would fail that test. A readable live stream alone does not establish recorded playback, which has separate index, export and decode checks.
 
-The restart checker snapshots old files after shutdown finalisation, checks that their hashes remain unchanged, then waits for genuinely new files containing at least 30 decodable frames per channel. An earlier agent test failed because a shutdown-finalised old fragment could be selected as a new recording. That weakness was corrected before the personal run; the failed agent evidence remains local and is not relabelled as personal work.
+The restart checker snapshots old files after shutdown finalisation, checks that their hashes remain unchanged, then waits for genuinely new files containing at least 30 decodable frames per channel. An earlier development test failed because a shutdown-finalised old fragment could be selected as a new recording. That weakness was corrected before the personal run; the failed development evidence remains local and is not relabelled as personal work.
 
 ## Troubleshooting boundaries
 

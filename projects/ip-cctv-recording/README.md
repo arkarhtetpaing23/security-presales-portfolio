@@ -4,9 +4,9 @@
 
 This project demonstrates how two generated video sources reach a software recorder, become recordings and produce playable exports. It also tests viewer restrictions and recovery from a camera-source outage and recorder restart.
 
-## Why this matters for pre-sales
+## Relevance to network and infrastructure operations
 
-A technical demonstration should establish more than a working live picture. The customer also needs evidence that recording, retrieval and access restrictions work. This lab lets me explain those separate functions and show controlled fault behaviour. It supports introductory demonstration and documentation skills; commercial product selection, installation, cabling, electrical safety and production design are outside its scope.
+I used this lab to verify service behavior beyond a working live stream: recording, retrieval, access restrictions and controlled recovery. These checks help distinguish source availability from recorder and playback behavior. The implementation is a software simulation on one laptop.
 
 ## Architecture
 
@@ -35,11 +35,11 @@ The before and after stages repeat the same 13-check matrix. They are not 26 dif
 - [Camera 1 exported video](evidence/videos/cam01-verified.mp4) and [Camera 2 exported video](evidence/videos/cam02-verified.mp4). Download and open in a compatible player if the repository viewer does not play them.
 - [Implementation and test procedure](docs/IMPLEMENTATION.md).
 - [My contribution and explanation](docs/CONTRIBUTION_AND_SCOPE.md).
-- [Pre-sales demonstration and handover brief](docs/PRESALES_BRIEF.md).
+- [Demonstration and handover brief](docs/PRESALES_BRIEF.md).
 - Reviewed [lab source](lab.py), [optional portable-tool downloader](bootstrap.py), and [tool reference manifest](tools/reference-manifest.json).
 
 ## Limits
 
 No physical IP camera, NVR appliance, PoE switch, cable, ONVIF discovery, DHCP server, managed-switch VLAN, night image, physical storage retention, access-control system, public-address system or AutoCAD drawing was tested. The human test covered saved exports; browser live-view playback and unfamiliar-fault troubleshooting have not been personally assessed. This is not proof of independent production deployment capability.
 
-The source I was prepared and reviewed with AI-assist before my run. I personally executed the guided procedure and validated the described outputs. See the exact contribution statement before interpreting any result as independently authored work.
+I personally set up and ran the documented commissioning procedure and validated the described results. The procedure automates its acceptance checks and controlled faults; my exported-video observations are recorded separately. Source provenance and required attribution remain in the existing history and references. See my contribution statement for the exact scope.

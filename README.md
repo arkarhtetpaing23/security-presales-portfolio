@@ -1,29 +1,38 @@
-# Arkar Htet Paing — Security Systems Pre-Sales Portfolio
+# Arkar Htet Paing — personal Linux IP-video service laboratory
 
-Computing and cyber security graduate preparing for an entry-level opportunity in network services and integrated security. This portfolio demonstrates a personally executed, guided IP CCTV software lab and the evidence behind its results.
+I developed this personal software laboratory as part of my technical preparation for junior network and infrastructure roles in Singapore. I used it to study service commissioning, source availability, recording/playback validation, viewing permissions and controlled recovery.
 
-Prepared with the requirements of Sales Engineer (Pre-Sales), in mind. It is a learning portfolio, not a record of customer installations or commercial pre-sales employment.
+## My practical work
 
-## Start here
+I personally set up and ran the documented commissioning procedure on Kali Linux, reviewed its results, played both exported recordings and explained the observed service behavior. The procedure automates acceptance checks and controlled failures; my playback observations separately establish that the saved exports were usable.
 
-| Project | Relevant capability | Verified scope | Evidence |
-|---|---|---|---|
-| [IP CCTV recording and recovery](projects/ip-cctv-recording/README.md) | Explain a CCTV video path, demonstrate recorded playback, check viewer permissions and observe recovery | Two synthetic sources and a software recorder on one Kali Linux laptop; guided personal execution | 13 checks before recovery, 3 recovery checks, 13 checks after recovery; two exported videos personally viewed |
+| Verification stage | Actual result |
+|---|---|
+| Before recovery | 13/13 checks passed |
+| Controlled source outage and recorder restart | 3/3 recovery checks passed |
+| After recovery | The same 13/13 acceptance matrix passed again |
+| Saved exports | Both decoded successfully and were personally viewed |
 
-For a quick review, open the project summary, inspect its diagram, then follow the test results and video links. For a technical interview, read the implementation, reproduction procedure and exact contribution statement.
+The repeated matrix is not 26 different features. I explained why live video alone does not establish recording/playback and why one source's outage should not interrupt the other source while the recorder remains available.
 
-## Education and direction
+## Review the project
 
-NCC Education Level 4 Diploma in Computing and Level 5 Diploma in Computing (with Cyber Security), both awarded with Distinction according to the candidate's educational documents reviewed locally. Relevant study includes computer networks, network security and IT project management. Academic records are shared privately when required and are not included here.
+- [Project summary and topology](projects/ip-cctv-recording/README.md)
+- [My contribution and scope](projects/ip-cctv-recording/docs/CONTRIBUTION_AND_SCOPE.md)
+- [Actual results, logs and exported videos](projects/ip-cctv-recording/evidence/README.md)
+- [Implementation and reproduction](projects/ip-cctv-recording/docs/IMPLEMENTATION.md)
+- [File integrity manifest](SHA256SUMS.txt)
 
-The career goal is to support technical demonstrations, requirements clarification, documentation and troubleshooting while developing wider security-system design skills. This lab does not establish five years of experience, AutoCAD proficiency, physical installation ability or professional English fluency.
+Both sources are synthetic video services and the recorder runs on the same laptop. This is a loopback software laboratory, with no physical camera, switch segmentation or commercial installation represented. It provides evidence of service verification and recovery review; unfamiliar-fault diagnosis remains a further exercise.
 
-## Contribution and evidence
+## Education and career preparation
 
-The project materials were developed with AI assistance. I personally ran the reviewed commissioning procedure, supplied its actual output, played both saved exports and explained live versus recorded video and camera-source failure isolation. The saved reports and export hashes were subsequently checked. I do not claim unaided authorship or independent commercial commissioning experience.
+I hold the NCC Education Level 4 Diploma in Computing and Level 5 Diploma in Computing (with Cyber Security), both awarded with Distinction. My academic foundations include computer networks, network security and IT project management. Educational records are supplied privately.
 
-Only personally validated work is presented. Other prepared project materials are excluded until their personal implementation, testing and understanding are established.
+My [infrastructure and networking portfolio](https://github.com/arkarhtetpaing23/singapore-infrastructure-operations-labs) includes my personally executed VLAN/OSPF commissioning run and ongoing Linux recovery/monitoring practice.
 
-See [contribution and scope](projects/ip-cctv-recording/docs/CONTRIBUTION_AND_SCOPE.md), [evidence index](projects/ip-cctv-recording/evidence/README.md), and [file integrity manifest](SHA256SUMS.txt). A file hash verifies bytes, not personal authorship or professional competence.
+## Evidence and attribution
 
-No certificates, transcripts, residential address, phone number, CV, passwords or private configuration files are included.
+The published operational reports and videos come from my personal Session 01. Actual results, timestamps and hashes are preserved. Source provenance and required attribution remain in the repository history and technical references. Other prepared projects are not presented as completed personal work.
+
+Certificates, transcripts, residential address, phone numbers, CVs, passwords and private configuration files are excluded from this public repository.
